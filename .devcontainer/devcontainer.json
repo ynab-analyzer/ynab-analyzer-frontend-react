@@ -18,7 +18,9 @@
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "ms-vscode.vscode-typescript-tslint-plugin"
+        "GitHub.vscode-github-actions",
+        "GitHub.copilot",
+        "GitHub.copilot-chat"
       ]
     }
   }
