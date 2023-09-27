@@ -12,3 +12,6 @@ jobs:
             node-version: 20
         - run: npm install
         - run: npm run test:cov
+        - uses: codecov/codecov-action@v3
+          env:
+            CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
