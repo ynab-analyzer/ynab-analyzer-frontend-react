@@ -1,3 +1,6 @@
+![unit tests](https://github.com/ynab-analyzer/ynab-analyzer-frontend-react/actions/workflows/coverage.yml/badge.svg)
+[![codecov](https://codecov.io/gh/ynab-analyzer/ynab-analyzer-frontend-react/graph/badge.svg?token=PHQ3RGVR17)](https://codecov.io/gh/ynab-analyzer/ynab-analyzer-frontend-react)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
