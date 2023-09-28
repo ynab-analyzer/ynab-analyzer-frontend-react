@@ -10,7 +10,9 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "test:watch:cov": "jest --watchAll --coverage"
+    "test:watch:cov": "jest --watchAll --coverage",
+    "cypress": "cypress run",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "class-variance-authority": "latest",
@@ -30,6 +32,7 @@
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "autoprefixer": "latest",
+    "cypress": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
     "jest": "latest",

@@ -40,6 +40,15 @@ Select one of the following commands from below, depending on your desire to exe
 npm run (test || test:watch || test:cov || test:watch:cov)
 ```
 
+### Executing E2E Tests
+**Note**: E2E tests must be executed from your local machine, not the dev container. In the future, these will probably be moved into their own repo so they can be easily executed on both frontend and backend changes.
+
+Select one of the following commands from below, depending on your desire to execute the tests in `headless` mode or not.
+
+```
+npm run (cypress || cypress:open)
+```
+
 ## Authors
 
 [@CaseyHoover](https://github.com/CaseyHoover)
