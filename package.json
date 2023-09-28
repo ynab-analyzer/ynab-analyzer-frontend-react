@@ -15,6 +15,7 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "class-variance-authority": "latest",
     "clsx": "latest",
     "lucide-react": "latest",
