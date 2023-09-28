@@ -1,8 +1,10 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import Home from '@/app/page';
 
 describe('Home', () => {
-  it('renders without crashing', () => {
+  test('renders main nav', () => {
     render(<Home />);
+    const mainNavElement = screen.getByRole('navigation');
+    expect(mainNavElement).toBeInTheDocument();
   });
 });
