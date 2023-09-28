@@ -1,0 +1,14 @@
+coverage:
+  status:
+    project:
+      default:
+        target: 100%
+        threshold: 5%
+        paths: 
+          - "src"
+    patch:
+      default:
+        target: 100%
+        threshold: 20%
+        paths:
+          - "src"

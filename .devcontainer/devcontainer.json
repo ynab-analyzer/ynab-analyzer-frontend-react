@@ -20,7 +20,8 @@
         "esbenp.prettier-vscode",
         "GitHub.vscode-github-actions",
         "GitHub.copilot",
-        "GitHub.copilot-chat"
+        "GitHub.copilot-chat",
+        "codecov.codecov"
       ]
     }
   }
