@@ -1,16 +1,16 @@
 import { render } from '@testing-library/react';
-import Home from '@/app/authorize-ynab/page';
+import AuthorizeYnab from '@/app/authorize-ynab/page';
 
 jest.mock('../../hooks/use-ynab-token/use-ynab-token', () => jest.fn());
 
-describe('Home', () => {
+describe('AuthorizeYnab', () => {
   it('should render the redirecting message', () => {
-    const { getByText } = render(<Home />);
+    const { getByText } = render(<AuthorizeYnab />);
     expect(getByText('Redirecting...')).toBeInTheDocument();
   });
 
   it('should call useYnabToken hook', () => {
-    render(<Home />);
+    render(<AuthorizeYnab />);
     expect(
       require('../../hooks/use-ynab-token/use-ynab-token')
     ).toHaveBeenCalled();

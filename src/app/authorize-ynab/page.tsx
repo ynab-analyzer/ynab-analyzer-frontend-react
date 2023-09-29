@@ -2,7 +2,7 @@
 
 import useYnabToken from '@/hooks/use-ynab-token/use-ynab-token';
 
-export default function Home() {
+export default function AuthorizeYnab() {
   useYnabToken();
 
   return (
