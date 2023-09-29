@@ -11,7 +11,14 @@ export function MainNav({
       className={cn('flex items-center space-x-4 lg:space-x-6', className)}
       {...props}
     >
-      <Image src="/ynab.svg" alt="YNAB Analyzer Logo" width={80} height={40} />
+      <Image
+        src="/ynab.svg"
+        alt="YNAB Analyzer Logo"
+        width="0"
+        height="0"
+        sizes="100vw"
+        className="w-full h-auto"
+      />
       <h3>YNAB Analyzer</h3>
       <Link
         href=""
