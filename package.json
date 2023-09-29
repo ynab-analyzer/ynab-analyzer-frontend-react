@@ -15,8 +15,8 @@
     "cypress:open": "cypress open"
   },
   "dependencies": {
-    "@boiseitguru/cookie-cutter": "^0.2.1",
-    "@radix-ui/react-slot": "^1.0.2",
+    "@boiseitguru/cookie-cutter": "latest",
+    "@radix-ui/react-slot": "latest",
     "class-variance-authority": "latest",
     "clsx": "latest",
     "lucide-react": "latest",
