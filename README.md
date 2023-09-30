@@ -1,4 +1,4 @@
-![unit tests](https://github.com/ynab-analyzer/ynab-analyzer-frontend-react/actions/workflows/coverage.yml/badge.svg)
+![tests](https://github.com/ynab-analyzer/ynab-analyzer-frontend-react/actions/workflows/tests.yml/badge.svg)
 [![codecov](https://codecov.io/gh/ynab-analyzer/ynab-analyzer-frontend-react/graph/badge.svg?token=PHQ3RGVR17)](https://codecov.io/gh/ynab-analyzer/ynab-analyzer-frontend-react)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
