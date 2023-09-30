@@ -13,7 +13,7 @@ describe('setYnabTokenAsCookie', () => {
     const expiresIn = 3600;
     const expectedExpiration = new Date(
       new Date().getTime() + expiresIn * 1000
-    ).toGMTString();
+    ).toUTCString();
 
     setYnabTokenAsCookie(accessToken, expiresIn);
 

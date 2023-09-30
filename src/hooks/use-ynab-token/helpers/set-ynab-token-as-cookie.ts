@@ -8,7 +8,7 @@ import cookieCutter from '@boiseitguru/cookie-cutter';
 const setYnabTokenAsCookie = (accessToken: string, expiresIn: number) => {
   const cookieExpiration = new Date(
     new Date().getTime() + expiresIn * 1000
-  ).toGMTString();
+  ).toUTCString();
   cookieCutter.set('ynabToken', accessToken, { expires: cookieExpiration });
 };
 

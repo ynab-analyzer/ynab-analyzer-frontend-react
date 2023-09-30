@@ -9,7 +9,7 @@ const useYnabToken = () => {
   useEffect(() => {
     const { accessToken, expiresIn } = getYnabTokenFromUrlHash();
     if (accessToken && expiresIn) {
-      setYnabTokenAsCookie(accessToken, expiresIn);
+      setYnabTokenAsCookie(accessToken, +expiresIn);
       push('/');
     } else {
       push('/error');
