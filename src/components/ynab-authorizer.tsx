@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui';
 
 const YnabAuthorizer = () => {
   const clientId = 'ndsLoWRTcR1oKtR29897DqgLYyF-F6yiNqyq-ykq3uc';

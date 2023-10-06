@@ -1,4 +1,4 @@
-import setYnabTokenAsCookie from '../../../../hooks/use-ynab-token/helpers/set-ynab-token-as-cookie';
+import { setYnabTokenAsCookie } from '@/hooks/use-ynab-token/helpers';
 import cookieCutter from '@boiseitguru/cookie-cutter';
 
 jest.mock('@boiseitguru/cookie-cutter');

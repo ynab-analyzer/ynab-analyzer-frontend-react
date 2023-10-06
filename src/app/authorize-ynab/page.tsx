@@ -1,6 +1,6 @@
 'use client';
 
-import useYnabToken from '@/hooks/use-ynab-token/use-ynab-token';
+import { useYnabToken } from '@/hooks/use-ynab-token';
 
 export default function AuthorizeYnab() {
   useYnabToken();
