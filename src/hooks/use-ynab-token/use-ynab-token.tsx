@@ -1,9 +1,16 @@
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import getYnabTokenFromUrlHash from './helpers/get-ynab-token-from-url-hash';
-import setYnabTokenAsCookie from './helpers/set-ynab-token-as-cookie';
+import {
+  getYnabTokenFromUrlHash,
+  setYnabTokenAsCookie,
+} from '@/hooks/use-ynab-token/helpers';
 
-const useYnabToken = () => {
+/**
+ * Custom React hook that retrieves the YNAB access token from the URL hash and sets it as a cookie.
+ * If the access token and its expiration time are present in the URL hash, the hook sets the access token as a cookie and redirects the user to the home page.
+ * If the access token and its expiration time are not present in the URL hash, the hook redirects the user to the error page.
+ */
+export const useYnabToken = () => {
   const { push } = useRouter();
 
   useEffect(() => {
@@ -17,4 +24,3 @@ const useYnabToken = () => {
   }, [push]);
 };
 
-export default useYnabToken;

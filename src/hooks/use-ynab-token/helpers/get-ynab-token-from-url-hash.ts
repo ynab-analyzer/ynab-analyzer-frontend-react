@@ -43,9 +43,7 @@ const parseYnabToken = (hash: string) => {
  * Retrieves the YNAB token from the URL hash.
  * @returns The YNAB token if it exists in the URL hash, otherwise undefined.
  */
-const getYnabTokenFromUrlHash = () => {
+export const getYnabTokenFromUrlHash = () => {
   const hash = getUrlHash();
   return hash ? parseYnabToken(hash) : {};
 };
-
-export default getYnabTokenFromUrlHash;

@@ -1,7 +1,10 @@
 import { render } from '@testing-library/react';
+import { useYnabToken } from '@/hooks/use-ynab-token';
 import AuthorizeYnab from '@/app/authorize-ynab/page';
 
-jest.mock('../../hooks/use-ynab-token/use-ynab-token', () => jest.fn());
+jest.mock('hooks/use-ynab-token', () => ({
+  useYnabToken: jest.fn(),
+}));
 
 describe('AuthorizeYnab', () => {
   it('should render the redirecting message', () => {
@@ -11,8 +14,6 @@ describe('AuthorizeYnab', () => {
 
   it('should call useYnabToken hook', () => {
     render(<AuthorizeYnab />);
-    expect(
-      require('../../hooks/use-ynab-token/use-ynab-token')
-    ).toHaveBeenCalled();
+    expect(useYnabToken).toHaveBeenCalled();
   });
 });

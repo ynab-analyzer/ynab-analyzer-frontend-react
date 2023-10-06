@@ -1,4 +1,4 @@
-import getYnabTokenFromUrlHash from '@/hooks/use-ynab-token/helpers/get-ynab-token-from-url-hash';
+import { getYnabTokenFromUrlHash } from '@/hooks/use-ynab-token/helpers';
 
 describe('getYnabTokenFromUrlHash', () => {
   it('should return an empty object if the URL hash is undefined', () => {

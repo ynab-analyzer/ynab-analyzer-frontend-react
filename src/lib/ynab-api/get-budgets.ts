@@ -1,4 +1,4 @@
-import { callWithToken } from '@/lib/ynab-api/call-with-token';
+import { callWithToken } from '@/lib/ynab-api';
 
 export function getBudgets() {
   const endpoint = 'budgets';
