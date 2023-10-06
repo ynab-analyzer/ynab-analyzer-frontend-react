@@ -21,7 +21,8 @@
         "GitHub.vscode-github-actions",
         "GitHub.copilot",
         "GitHub.copilot-chat",
-        "codecov.codecov"
+        "codecov.codecov",
+        "eamodio.gitlens"
       ]
     }
   }
