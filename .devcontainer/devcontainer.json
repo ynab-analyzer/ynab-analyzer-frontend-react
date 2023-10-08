@@ -22,7 +22,8 @@
         "GitHub.copilot",
         "GitHub.copilot-chat",
         "codecov.codecov",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "ryanluker.vscode-coverage-gutters"
       ]
     }
   }
