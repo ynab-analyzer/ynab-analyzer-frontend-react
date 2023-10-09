@@ -1,6 +1,6 @@
-import { getBudgets } from '@/lib/ynab-api/get-budgets';
-import { mockFetch } from '@/lib/tests/test-helpers';
+import { mockFetch } from '@/__tests__/test-helpers';
 import { ynabApiBaseUrl } from '@/lib/constants';
+import { getBudgets } from '@/lib/ynab-api/get-budgets';
 
 describe('getBudgets', () => {
   const mockResponse = { data: { result: 123 } };

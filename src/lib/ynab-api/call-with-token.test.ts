@@ -1,6 +1,6 @@
-import { callWithToken } from '@/lib/ynab-api/call-with-token';
-import { mockFetch } from '@/lib/tests/test-helpers';
+import { mockFetch } from '@/__tests__/test-helpers';
 import { ynabApiBaseUrl } from '@/lib/constants';
+import { callWithToken } from '@/lib/ynab-api/call-with-token';
 
 describe('callWithToken', () => {
   const mockResponse = { data: { result: 123 } };
