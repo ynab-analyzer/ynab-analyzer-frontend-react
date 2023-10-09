@@ -1,30 +1,12 @@
 import { callWithToken } from '@/lib/ynab-api/call-with-token';
-
-const getCookieMock = jest.fn((tokenName: string) => {
-  return {
-    value: tokenName,
-  };
-});
-
-jest.mock('next/headers', () => {
-  return {
-    cookies: jest.fn(() => {
-      return {
-        get: getCookieMock,
-      };
-    }),
-  };
-});
+import { mockFetch } from '@/lib/tests/test-helpers';
+import { ynabApiBaseUrl } from '@/lib/constants';
 
 describe('callWithToken', () => {
-  const mockResponse = { data: {} };
-  const mockJsonPromise = Promise.resolve(mockResponse);
-  const mockFetchPromise = Promise.resolve({
-    json: () => mockJsonPromise,
-  });
+  const mockResponse = { data: { result: 123 } };
 
   beforeEach(() => {
-    global.fetch = jest.fn().mockImplementation(() => mockFetchPromise);
+    mockFetch(mockResponse);
   });
 
   afterEach(() => {
@@ -40,7 +22,7 @@ describe('callWithToken', () => {
     await callWithToken(expectedEndpoint);
 
     expect(global.fetch).toHaveBeenCalledWith(
-      `https://api.youneedabudget.com/v1/${expectedEndpoint}`,
+      `${ynabApiBaseUrl}/${expectedEndpoint}`,
       {
         headers: new Headers(expectedHeaders),
       }
